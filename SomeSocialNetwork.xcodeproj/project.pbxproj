@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		5962446C286B17B00007D87D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962446B286B17B00007D87D /* AppDelegate.swift */; };
 		5962446E286B17B00007D87D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962446D286B17B00007D87D /* SceneDelegate.swift */; };
-		59624470286B17B00007D87D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962446F286B17B00007D87D /* ViewController.swift */; };
-		59624473286B17B00007D87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59624471286B17B00007D87D /* Main.storyboard */; };
 		59624475286B17B20007D87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59624474286B17B20007D87D /* Assets.xcassets */; };
 		59624478286B17B20007D87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59624476286B17B20007D87D /* LaunchScreen.storyboard */; };
+		59624480286B18670007D87D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962447F286B18670007D87D /* Router.swift */; };
+		59624482286B18720007D87D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59624481286B18720007D87D /* ModuleBuilder.swift */; };
+		596244B0286B80A70007D87D /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244AF286B80A70007D87D /* AuthorizationViewController.swift */; };
+		596244B2286B80BF0007D87D /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244B1286B80BF0007D87D /* AuthorizationPresenter.swift */; };
+		596244B4286B81070007D87D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244B3286B81070007D87D /* SignUpViewController.swift */; };
+		596244B6286B81250007D87D /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244B5286B81250007D87D /* SignUpPresenter.swift */; };
+		596244B8286B81360007D87D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244B7286B81360007D87D /* SignInViewController.swift */; };
+		596244BA286B81480007D87D /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244B9286B81480007D87D /* SignInPresenter.swift */; };
+		596244C0286B8CD50007D87D /* ProfileEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244BF286B8CD50007D87D /* ProfileEditorPresenter.swift */; };
+		596244C2286B8CEC0007D87D /* ProfileEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244C1286B8CEC0007D87D /* ProfileEditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59624468286B17B00007D87D /* SomeSocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeSocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5962446B286B17B00007D87D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5962446D286B17B00007D87D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5962446F286B17B00007D87D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		59624472286B17B00007D87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59624474286B17B20007D87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59624477286B17B20007D87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59624479286B17B20007D87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5962447F286B18670007D87D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		59624481286B18720007D87D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		596244AF286B80A70007D87D /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizationViewController.swift; path = SomeSocialNetwork/AuthorizationModule/View/AuthorizationViewController.swift; sourceTree = SOURCE_ROOT; };
+		596244B1286B80BF0007D87D /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		596244B3286B81070007D87D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		596244B5286B81250007D87D /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		596244B7286B81360007D87D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		596244B9286B81480007D87D /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		596244BF286B8CD50007D87D /* ProfileEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorPresenter.swift; sourceTree = "<group>"; };
+		596244C1286B8CEC0007D87D /* ProfileEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,149 @@
 			children = (
 				5962446B286B17B00007D87D /* AppDelegate.swift */,
 				5962446D286B17B00007D87D /* SceneDelegate.swift */,
-				5962446F286B17B00007D87D /* ViewController.swift */,
-				59624471286B17B00007D87D /* Main.storyboard */,
+				5962447F286B18670007D87D /* Router.swift */,
+				59624481286B18720007D87D /* ModuleBuilder.swift */,
+				596244A3286B7F520007D87D /* AuthorizationModule */,
+				596244A8286B7FD80007D87D /* SignUpModule */,
+				596244A7286B7FC00007D87D /* SignInModule */,
+				596244BB286B8BD70007D87D /* ProfileEditorModule */,
 				59624474286B17B20007D87D /* Assets.xcassets */,
 				59624476286B17B20007D87D /* LaunchScreen.storyboard */,
 				59624479286B17B20007D87D /* Info.plist */,
 			);
 			path = SomeSocialNetwork;
+			sourceTree = "<group>";
+		};
+		596244A3286B7F520007D87D /* AuthorizationModule */ = {
+			isa = PBXGroup;
+			children = (
+				596244A6286B7FA20007D87D /* Model */,
+				596244A5286B7F980007D87D /* View */,
+				596244A4286B7F6A0007D87D /* Presenter */,
+			);
+			path = AuthorizationModule;
+			sourceTree = "<group>";
+		};
+		596244A4286B7F6A0007D87D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				596244B1286B80BF0007D87D /* AuthorizationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		596244A5286B7F980007D87D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				596244AF286B80A70007D87D /* AuthorizationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		596244A6286B7FA20007D87D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		596244A7286B7FC00007D87D /* SignInModule */ = {
+			isa = PBXGroup;
+			children = (
+				596244AE286B802F0007D87D /* Model */,
+				596244AD286B802B0007D87D /* View */,
+				596244AC286B80240007D87D /* Presenter */,
+			);
+			path = SignInModule;
+			sourceTree = "<group>";
+		};
+		596244A8286B7FD80007D87D /* SignUpModule */ = {
+			isa = PBXGroup;
+			children = (
+				596244AB286B801B0007D87D /* Model */,
+				596244AA286B80130007D87D /* View */,
+				596244A9286B800C0007D87D /* Presenter */,
+			);
+			path = SignUpModule;
+			sourceTree = "<group>";
+		};
+		596244A9286B800C0007D87D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				596244B5286B81250007D87D /* SignUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		596244AA286B80130007D87D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				596244B3286B81070007D87D /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		596244AB286B801B0007D87D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		596244AC286B80240007D87D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				596244B9286B81480007D87D /* SignInPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		596244AD286B802B0007D87D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				596244B7286B81360007D87D /* SignInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		596244AE286B802F0007D87D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		596244BB286B8BD70007D87D /* ProfileEditorModule */ = {
+			isa = PBXGroup;
+			children = (
+				596244BE286B8BF90007D87D /* Model */,
+				596244BD286B8BED0007D87D /* View */,
+				596244BC286B8BE70007D87D /* Presenter */,
+			);
+			path = ProfileEditorModule;
+			sourceTree = "<group>";
+		};
+		596244BC286B8BE70007D87D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				596244BF286B8CD50007D87D /* ProfileEditorPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		596244BD286B8BED0007D87D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				596244C1286B8CEC0007D87D /* ProfileEditorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		596244BE286B8BF90007D87D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +279,6 @@
 			files = (
 				59624478286B17B20007D87D /* LaunchScreen.storyboard in Resources */,
 				59624475286B17B20007D87D /* Assets.xcassets in Resources */,
-				59624473286B17B00007D87D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59624470286B17B00007D87D /* ViewController.swift in Sources */,
+				596244C0286B8CD50007D87D /* ProfileEditorPresenter.swift in Sources */,
+				596244B2286B80BF0007D87D /* AuthorizationPresenter.swift in Sources */,
+				596244B4286B81070007D87D /* SignUpViewController.swift in Sources */,
+				59624480286B18670007D87D /* Router.swift in Sources */,
 				5962446C286B17B00007D87D /* AppDelegate.swift in Sources */,
+				596244BA286B81480007D87D /* SignInPresenter.swift in Sources */,
+				59624482286B18720007D87D /* ModuleBuilder.swift in Sources */,
+				596244B8286B81360007D87D /* SignInViewController.swift in Sources */,
+				596244B0286B80A70007D87D /* AuthorizationViewController.swift in Sources */,
+				596244C2286B8CEC0007D87D /* ProfileEditorViewController.swift in Sources */,
+				596244B6286B81250007D87D /* SignUpPresenter.swift in Sources */,
 				5962446E286B17B00007D87D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +307,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		59624471286B17B00007D87D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59624472286B17B00007D87D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		59624476286B17B20007D87D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,19 +444,20 @@
 				INFOPLIST_FILE = SomeSocialNetwork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = denmagg.SomeSocialNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,19 +473,20 @@
 				INFOPLIST_FILE = SomeSocialNetwork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = denmagg.SomeSocialNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
