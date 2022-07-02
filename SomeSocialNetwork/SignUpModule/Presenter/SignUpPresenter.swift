@@ -8,15 +8,14 @@
 import Foundation
 
 protocol SignUpViewProtocol: AnyObject {
-//    func success()
-//    func failure()
+    func tapOnRegister()
+//    func getUserData() -> (firstName: String, lastName: String, email: String, password: String, passwordConfirmation: String)
 }
 
 protocol SignUpPresenterProtocol: AnyObject {
     init(view: SignUpViewProtocol, router: RouterProtocol)
     
-//    func tapOnSignUp()
-//    func tapOnSignIn()
+    func tapOnRegister()
 }
 
 class SignUpPresenter: SignUpPresenterProtocol {
@@ -25,6 +24,7 @@ class SignUpPresenter: SignUpPresenterProtocol {
     
     private weak var view: SignUpViewProtocol?
     private var router: RouterProtocol?
+    private var userData: RegistrationData?
     
     
     required init(view: SignUpViewProtocol, router: RouterProtocol) {
@@ -32,12 +32,10 @@ class SignUpPresenter: SignUpPresenterProtocol {
         self.router = router
     }
     
-//    func tapOnSignUp() {
-//        router?.showSignUp()
-//    }
-//
-//    func tapOnSignIn() {
-//        router?.showSignUp()
-//    }
+    func tapOnRegister() {
+//        view.ge
+        //TODO: insert some checking logic and http request
+        router?.showProfileEditor()
+    }
 
 }

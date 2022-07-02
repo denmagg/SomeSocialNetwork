@@ -43,21 +43,21 @@ final class Router : RouterProtocol {
     func showSignUp() {
         if let navigationController = navigationController {
             guard let signUpViewController = moduleBuilder?.createSignUpModule(router: self) else { return }
-            navigationController.addChild(signUpViewController)
+            navigationController.pushViewController(signUpViewController, animated: true)
         }
     }
     
     func showSignIn() {
         if let navigationController = navigationController {
             guard let signInViewController = moduleBuilder?.createSignInModule(router: self) else { return }
-            navigationController.addChild(signInViewController)
+            navigationController.pushViewController(signInViewController, animated: true)
         }
     }
     
     func showProfileEditor() {
         if let navigationController = navigationController {
             guard let profileEditorViewController = moduleBuilder?.createProfileEditorModule(router: self) else { return }
-            navigationController.addChild(profileEditorViewController)
+            navigationController.pushViewController(profileEditorViewController, animated: true)
         }
     }
     

@@ -8,15 +8,15 @@
 import Foundation
 
 protocol AuthorizationViewProtocol: AnyObject {
-//    func success()
-//    func failure()
+    func tapOnSignUp()
+    func tapOnLogin()
 }
 
 protocol AuthorizationPresenterProtocol: AnyObject {
     init(view: AuthorizationViewProtocol, router: RouterProtocol)
     
     func tapOnSignUp()
-    func tapOnSignIn()
+    func goToSignInScreen()
 }
 
 class AuthorizationPresenter: AuthorizationPresenterProtocol {
@@ -35,8 +35,8 @@ class AuthorizationPresenter: AuthorizationPresenterProtocol {
         router?.showSignUp()
     }
     
-    func tapOnSignIn() {
-        router?.showSignUp()
+    func goToSignInScreen() {
+        router?.showSignIn()
     }
 
 }

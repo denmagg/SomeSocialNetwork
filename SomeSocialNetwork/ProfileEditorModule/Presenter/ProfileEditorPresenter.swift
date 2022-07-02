@@ -8,13 +8,12 @@
 import Foundation
 
 protocol ProfileEditorViewProtocol: AnyObject {
-//    func success()
-//    func failure()
+    func tapOnDone()
 }
 
 protocol ProfileEditorPresenterProtocol: AnyObject {
     init(view: ProfileEditorViewProtocol, router: RouterProtocol)
-    
+    func tapOnDone()
 }
 
 class ProfileEditorPresenter: ProfileEditorPresenterProtocol {
@@ -24,10 +23,13 @@ class ProfileEditorPresenter: ProfileEditorPresenterProtocol {
     private weak var view: ProfileEditorViewProtocol?
     private var router: RouterProtocol?
     
-    
     required init(view: ProfileEditorViewProtocol, router: RouterProtocol) {
         self.view = view
         self.router = router
+    }
+    
+    func tapOnDone() {
+        print("Done")
     }
 
 }
