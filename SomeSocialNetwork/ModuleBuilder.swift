@@ -34,7 +34,8 @@ final class ModuleBuilder: ModuleBuilderProtocol {
     }
     func createSignInModule(router: RouterProtocol) -> UIViewController {
         let view = SignInViewController()
-        let presenter = SignInPresenter(view: view, router: router)
+        let networkService = NetworkService()
+        let presenter = SignInPresenter(view: view, router: router, networkService: networkService)
         view.presenter = presenter
         return view
     }

@@ -54,6 +54,10 @@ class SignInViewController: UIViewController {
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.spacing = 5
+        signInButton.addTarget(self, action: #selector(tapOnSignIn), for: .touchUpInside)
+        loginTextField.addTarget(self, action: #selector(makeTextFieldWhite(textField:)), for: .allEditingEvents)
+        passwordTextField.addTarget(self, action: #selector(makeTextFieldWhite(textField:)), for: .allEditingEvents)
+        passwordTextField.isSecureTextEntry = true
     }
     
     private func setupSubviews() {
@@ -88,9 +92,64 @@ class SignInViewController: UIViewController {
         signInButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         
     }
-
+    
+    @objc private func makeTextFieldWhite(textField: UITextField) {
+        DispatchQueue.main.async {
+            textField.backgroundColor = UIColor.white
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
 
 extension SignInViewController: SignInViewProtocol {
+    
+    func failture(error: NetworkError) {
+        showToast(message: "\(error.localizedDescription)")
+    }
+    
+    @objc func tapOnSignIn() {
+        presenter.tapOnSignIn()
+    }
+    func makeEmailFieldRed() {
+        DispatchQueue.main.async { [self] in
+            self.loginTextField.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0.1)
+        }
+    }
+    func makePasswordFieldRed() {
+        DispatchQueue.main.async { [self] in
+            self.passwordTextField.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0.1)
+        }
+    }
+    
+    func getTextFieldsData() -> (emailData: String?, passwordData: String?) {
+        return (loginTextField.text, passwordTextField.text)
+    }
+}
+
+extension SignInViewController{
+
+    func showToast(message: String) {
+        let toastLabel = UITextView(frame: CGRect(x: self.view.frame.size.width/16, y: self.view.frame.size.height-150, width: self.view.frame.size.width * 7/8, height: 54))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center;
+        toastLabel.text = "   \(message)   "
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        toastLabel.font = UIFont(name: (toastLabel.font?.fontName)!, size: 16)
+        //            toastLabel.layoutEdgeInsets.left = 8
+        //            toastLabel.layoutEdgeInsets.right = 8
+        toastLabel.center.x = self.view.frame.size.width/2
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 0.2, delay: 5.0, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
     
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RegistrationData {
+struct RegistrationData: Encodable {
     let email: String
     let firstName: String
     let lastName: String

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ProfileData {
+struct ProfileData: Encodable {
     let email: String
     let firstName: String
     let lastName: String

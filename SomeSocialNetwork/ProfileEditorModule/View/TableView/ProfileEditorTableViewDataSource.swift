@@ -47,8 +47,6 @@ class ProfileEditorTableViewDataSource: NSObject, UITableViewDataSource {
         }
     }
     
-//    var 
-//    
 //    init(withFields: [CustomTextField]) {
 //        super.init()
 //        
@@ -56,6 +54,13 @@ class ProfileEditorTableViewDataSource: NSObject, UITableViewDataSource {
 //        self.dataDetailDescription = weatherData.dataDetailDescription
 //        self.dataSpecs = weatherData.dataSpecs
 //    }
+    
+    let mainInfoCell = MainInfoTableViewCell(withTitle: Consts.fullNameTextField.title, textFieldData: Consts.fullNameTextField.data)
+    let birthplaceCell = LabeledFieldTableViewCell(withTitle: Consts.birthplaceTextField.title, textFieldData: Consts.birthplaceTextField.data)
+    let birthDateCell = LabeledFieldTableViewCell(withTitle: Consts.birthdateTextField.title, textFieldData: Consts.birthdateTextField.data)
+    let companyCell = LabeledFieldTableViewCell(withTitle: Consts.companyTextField.title, textFieldData: Consts.companyTextField.data)
+    let positionCell = LabeledFieldTableViewCell(withTitle: Consts.positionTextField.title, textFieldData: Consts.positionTextField.data)
+    let categoryCell = CategoryTableViewCell(withTitle: Consts.categoryCell.title, categories: Consts.categoryCell.categories)
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Consts.numberOfRows
@@ -67,27 +72,27 @@ class ProfileEditorTableViewDataSource: NSObject, UITableViewDataSource {
             let cell = HeaderTableViewCell(withHeader: "Let's make your profile")
             return cell
         case 1:
-            let cell = MainInfoTableViewCell(withTitle: Consts.fullNameTextField.title, textFieldData: Consts.fullNameTextField.data)
+            let cell = mainInfoCell
             cell.heightAnchor.constraint(equalTo: cell.labeledTextField.heightAnchor).isActive = true
             return cell
         case 2:
-            let cell = LabeledFieldTableViewCell(withTitle: Consts.birthplaceTextField.title, textFieldData: Consts.birthplaceTextField.data)
+            let cell = birthplaceCell
             cell.heightAnchor.constraint(equalTo: cell.labeledTextField.heightAnchor).isActive = true
             return cell
         case 3:
-            let cell = LabeledFieldTableViewCell(withTitle: Consts.birthdateTextField.title, textFieldData: Consts.birthdateTextField.data)
+            let cell = birthDateCell
             cell.heightAnchor.constraint(equalTo: cell.labeledTextField.heightAnchor).isActive = true
             return cell
         case 4:
-            let cell = LabeledFieldTableViewCell(withTitle: Consts.companyTextField.title, textFieldData: Consts.companyTextField.data)
+            let cell = companyCell
             cell.heightAnchor.constraint(equalTo: cell.labeledTextField.heightAnchor).isActive = true
             return cell
         case 5:
-            let cell = LabeledFieldTableViewCell(withTitle: Consts.positionTextField.title, textFieldData: Consts.positionTextField.data)
+            let cell = positionCell
             cell.heightAnchor.constraint(equalTo: cell.labeledTextField.heightAnchor).isActive = true
             return cell
         case 6:
-            let cell = CategoryTableViewCell(withTitle: Consts.categoryCell.title, categories: Consts.categoryCell.categories)
+            let cell = categoryCell
             return cell
         default:
             return UITableViewCell()

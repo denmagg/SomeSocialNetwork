@@ -29,6 +29,8 @@
 		596244E5286CEB090007D87D /* SignUpTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244E4286CEB090007D87D /* SignUpTableViewDelegate.swift */; };
 		596244E7286E0D620007D87D /* LogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244E6286E0D620007D87D /* LogoTableViewCell.swift */; };
 		596244E9286E11640007D87D /* LabeledFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244E8286E11640007D87D /* LabeledFieldTableViewCell.swift */; };
+		599CAF752870EB14001A712E /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599CAF742870EB14001A712E /* LoginData.swift */; };
+		599CAF792871AD37001A712E /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599CAF782871AD37001A712E /* NetworkErrors.swift */; };
 		59EC3CB8286F3ED1002F8E5D /* ProfileEditorTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CB7286F3ED1002F8E5D /* ProfileEditorTableViewDataSource.swift */; };
 		59EC3CBA286F3EDD002F8E5D /* ProfileEditorTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CB9286F3EDD002F8E5D /* ProfileEditorTableViewDelegate.swift */; };
 		59EC3CBC286F3F13002F8E5D /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CBB286F3F13002F8E5D /* HeaderTableViewCell.swift */; };
@@ -37,7 +39,6 @@
 		59EC3CC4286F7325002F8E5D /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CC3286F7325002F8E5D /* CategoryTableViewCell.swift */; };
 		59EC3CC8287066E5002F8E5D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CC7287066E5002F8E5D /* NetworkService.swift */; };
 		59EC3CCA28706E42002F8E5D /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CC928706E42002F8E5D /* RegistrationData.swift */; };
-		59EC3CCC287081C1002F8E5D /* AutorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CCB287081C1002F8E5D /* AutorizationData.swift */; };
 		59EC3CCE2870823D002F8E5D /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CCD2870823D002F8E5D /* ProfileData.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		596244E4286CEB090007D87D /* SignUpTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewDelegate.swift; sourceTree = "<group>"; };
 		596244E6286E0D620007D87D /* LogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewCell.swift; sourceTree = "<group>"; };
 		596244E8286E11640007D87D /* LabeledFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledFieldTableViewCell.swift; sourceTree = "<group>"; };
+		599CAF742870EB14001A712E /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		599CAF782871AD37001A712E /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		59EC3CB7286F3ED1002F8E5D /* ProfileEditorTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorTableViewDataSource.swift; sourceTree = "<group>"; };
 		59EC3CB9286F3EDD002F8E5D /* ProfileEditorTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorTableViewDelegate.swift; sourceTree = "<group>"; };
 		59EC3CBB286F3F13002F8E5D /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -74,7 +77,6 @@
 		59EC3CC3286F7325002F8E5D /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		59EC3CC7287066E5002F8E5D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		59EC3CC928706E42002F8E5D /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
-		59EC3CCB287081C1002F8E5D /* AutorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationData.swift; sourceTree = "<group>"; };
 		59EC3CCD2870823D002F8E5D /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +156,6 @@
 		596244A6286B7FA20007D87D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				59EC3CCB287081C1002F8E5D /* AutorizationData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +224,7 @@
 		596244AE286B802F0007D87D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				599CAF742870EB14001A712E /* LoginData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				59EC3CC7287066E5002F8E5D /* NetworkService.swift */,
+				599CAF782871AD37001A712E /* NetworkErrors.swift */,
 			);
 			path = NetworkServices;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				596244DA286C78550007D87D /* CustomTextField.swift in Sources */,
+				599CAF752870EB14001A712E /* LoginData.swift in Sources */,
 				596244C0286B8CD50007D87D /* ProfileEditorPresenter.swift in Sources */,
 				596244E5286CEB090007D87D /* SignUpTableViewDelegate.swift in Sources */,
 				59EC3CB8286F3ED1002F8E5D /* ProfileEditorTableViewDataSource.swift in Sources */,
@@ -401,7 +405,7 @@
 				59EC3CCE2870823D002F8E5D /* ProfileData.swift in Sources */,
 				596244C2286B8CEC0007D87D /* ProfileEditorViewController.swift in Sources */,
 				596244E3286CEAFD0007D87D /* SignUpTableViewDataSource.swift in Sources */,
-				59EC3CCC287081C1002F8E5D /* AutorizationData.swift in Sources */,
+				599CAF792871AD37001A712E /* NetworkErrors.swift in Sources */,
 				596244B6286B81250007D87D /* SignUpPresenter.swift in Sources */,
 				5962446E286B17B00007D87D /* SceneDelegate.swift in Sources */,
 				596244DC286C79670007D87D /* LabeledTextFieldsView.swift in Sources */,

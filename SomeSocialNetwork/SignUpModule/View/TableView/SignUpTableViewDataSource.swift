@@ -31,15 +31,9 @@ class SignUpTableViewDataSource: NSObject, UITableViewDataSource {
         static let numberOfRows = 6
     }
     
-        var
-    
-        init(withFields: [CustomTextField]) {
-            super.init()
-    
-            self.dataDayForecast = weatherData.dataDayForecast
-            self.dataDetailDescription = weatherData.dataDetailDescription
-            self.dataSpecs = weatherData.dataSpecs
-        }
+    let fullNameCell = LabeledFieldTableViewCell(withTitle: Consts.fullNameTextField.title, textFieldData: Consts.fullNameTextField.data)
+    let emailCell = LabeledFieldTableViewCell(withTitle: Consts.emailTextField.title, textFieldData: Consts.emailTextField.data)
+    let passwordCell = LabeledFieldTableViewCell(withTitle: Consts.passwordTextField.title, textFieldData: Consts.passwordTextField.data)
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Consts.numberOfRows
@@ -52,17 +46,17 @@ class SignUpTableViewDataSource: NSObject, UITableViewDataSource {
             return cell
         case 1:
             //Нужно вынести поля в инициализатор и проинициализировать их в основном VC
-            let cell = LabeledFieldTableViewCell(withTitle: Consts.fullNameTextField.title, textFieldData: Consts.fullNameTextField.data)
-//            Слишком жесткая декомпозиция, надо сделать проще. Тк времени на то, чтобы делать делегаты на это все у меня нет
+            let cell = fullNameCell
+//FIXME:            Слишком жесткая декомпозиция, надо сделать проще. Тк времени на то, чтобы делать делегаты на это все у меня нет
 //            cell.labeledTextField.textFieldsArray[0]...
             cell.heightAnchor.constraint(equalTo: cell.labeledTextField.heightAnchor).isActive = true
             return cell
         case 2:
-            let cell = LabeledFieldTableViewCell(withTitle: Consts.emailTextField.title, textFieldData: Consts.emailTextField.data)
+            let cell = emailCell
             cell.heightAnchor.constraint(equalTo: cell.labeledTextField.heightAnchor).isActive = true
             return cell
         case 3:
-            let cell = LabeledFieldTableViewCell(withTitle: Consts.passwordTextField.title, textFieldData: Consts.passwordTextField.data)
+            let cell = passwordCell
             cell.heightAnchor.constraint(equalTo: cell.labeledTextField.heightAnchor).isActive = true
             return cell
         default:
